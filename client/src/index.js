@@ -11,7 +11,7 @@ import axios from 'axios';
 dotenv.config();
 
 axios.defaults.baseURL ="https://foodssg.herokuapp.com/"; // process.env.REACT_APP_API || 
-// axios.defaults.baseURL ="http://localhost:3001"; // process.env.REACT_APP_API || 
+// axios.defaults.baseURL ="http://localhost:3001"; // process.env.REACT_APP_API ||
 
 ReactDOM.render(
   <Provider store={store}>
