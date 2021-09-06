@@ -39,20 +39,20 @@ function Recipes({ location, allRecipes, searchedRecipes, searchRecipes, getReci
     switch (param) {
       case 'A-Z':
         return setRecipes([...recipes].sort((a, b) => {
-          if (a.title > b.title) {
+          if (a.title.toLowerCase() > b.title.toLowerCase()) {
             return 1;
           }
-          if (a.title < b.title) {
+          if (a.title.toLowerCase() < b.title.toLowerCase()) {
             return -1;
           }
           return 0;
         }))
       case 'Z-A':
         return setRecipes([...recipes].sort((a, b) => {
-          if (b.title > a.title) {
+          if (b.title.toLowerCase() > a.title.toLowerCase()) {
             return 1;
           }
-          if (b.title < a.title) {
+          if (b.title.toLowerCase() < a.title.toLowerCase()) {
             return -1;
           }
           return 0;
