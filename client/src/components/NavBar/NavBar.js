@@ -8,7 +8,7 @@ function NavBar(props) {
   const [recipe, setRecipes] = useState('');
 
   function handleChange(event) {
-    setRecipes(event.target.value)
+    setRecipes(event.target.value.toLowerCase())
   }
   
   function handleSubmit(e) {
