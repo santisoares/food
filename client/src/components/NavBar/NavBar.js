@@ -14,7 +14,7 @@ function NavBar(props) {
   function handleSubmit(e) {
     e.preventDefault()
      props.allRecipes.filter(e=>e.title.toLowerCase().includes(recipe.toLowerCase()))
-    props.searchRecipes(recipe)
+    props.searchRecipes(recipe.toLowerCase())
     setRecipes('')
   }
   return (
