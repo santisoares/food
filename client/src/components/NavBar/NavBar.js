@@ -13,7 +13,7 @@ function NavBar(props) {
   
   function handleSubmit(e) {
     e.preventDefault()
-    // props.allRecipes.filter(e=>e.title.toLowerCase().includes(recipe))
+     props.allRecipes.filter(e=>e.title.toLowerCase().includes(recipe))
     props.searchRecipes(recipe)
     setRecipes('')
   }
