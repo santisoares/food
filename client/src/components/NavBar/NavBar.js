@@ -8,12 +8,12 @@ function NavBar(props) {
   const [recipe, setRecipes] = useState('');
 
   function handleChange(event) {
-    setRecipes(event.target.value.toLowerCase())
+    setRecipes(event.target.value)
   }
   
   function handleSubmit(e) {
     e.preventDefault()
-     props.allRecipes.filter(e=>e.title.toLowerCase().includes(recipe))
+     props.allRecipes.filter(e=>e.title.toLowerCase().includes(recipe.toLowerCase()))
     props.searchRecipes(recipe)
     setRecipes('')
   }
